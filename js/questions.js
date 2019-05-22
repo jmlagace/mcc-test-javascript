@@ -1,9 +1,9 @@
-function evaluerQuestion(idElementResponse, fn)
+async function evaluerQuestion(idElementResponse, fn)
 {
     const element = document.getElementById(idElementResponse);
     var reponse = false;
     try {
-        reponse = fn();
+        reponse = await fn();
     } catch(err) {
         reponse = false;
     }
@@ -53,10 +53,7 @@ function evaluerQuestion3()
         ["salong", "ofjsmofi0mcf2034mc043409jcm034j", "salong-ofjsmofi0mcf2034mc043409jcm034j"],
         ["sadafsdfsfsflong", "ofjsmofi0mcf2034mc043409jcm034j", "sadafsdfsfsflong-ofjsmofi0mcf2034mc043409jcm034j"]
     ];
-    
-    reponses.forEach(function(elem) {
-        console.log(elem);
-    }); 
+        
     var bonneResponses = 0;    
     reponses.forEach(function(elem) {
         if (reponse3(elem[0], elem[1]) === elem[2]) {
@@ -85,7 +82,24 @@ function evaluerQuestion5()
     return document.getElementsByName("p").length == reponse5();
 }
 
-async function evaluerQuestion6()
+function evaluerQuestion6()
+{
+    const reponses = [
+        [[1,2,3,4,5,6], "1, 2, 3, 4, 5, 6"],
+        [['a', 'b', 'mcc', 'd'], "a, b, mcc, d"]        
+    ];
+
+    var bonneResponses = 0;    
+    reponses.forEach(function(elem) {
+        if (reponse6(elem[0]) === elem[1]) {
+            bonneResponses++;
+        }
+    });
+
+    return bonneResponses === Object.keys(reponses).length;
+}
+
+async function evaluerQuestion7()
 {
     const reponses = {
         "https://gist.githubusercontent.com/jmlagace/b697616d2aefa4cc859c4efe8676c02d/raw/exemple1.js": 3,
@@ -96,7 +110,7 @@ async function evaluerQuestion6()
     const elementReponse6 = document.getElementById("item-champ-text-reponse6");
     var bonneResponses = 0;    
     for (var urlTest in reponses) {
-        await reponse6(urlTest);        
+        await reponse7(urlTest);        
         if (elementReponse6.innerText == reponses[urlTest]) {
             bonneResponses++;
         }

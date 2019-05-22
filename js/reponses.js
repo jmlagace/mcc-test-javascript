@@ -6,3 +6,8 @@ function reponse1(num1, num2)
 {
     
 }
+
+function reponse6(tableau)
+{
+    
+}

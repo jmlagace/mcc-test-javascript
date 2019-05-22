@@ -59,8 +59,18 @@
                     </div>
 
                     <div class="question">
-                            <h2>Défi 6</h2>
-                            <p>La fonction reponse6() prends un seul paramètre, une URL. Le document JSON qui s'y trouve à la structure suivante:
+                        <h2>Défi 6</h2>
+                        <p>La fonction reponse6() prends un seul paramètre, un tableau, on doit retourner les éléments du tableau concatétés ensemble et séparé par une virgule.</p>
+                        <p>Donc, par exemple, le tableau [1, 2, 10, 4, 5] retournerait le texte: "1, 2, 10, 4, 5".</p>
+                        <button type="button" onclick="evaluerQuestion('reponse-question-6', evaluerQuestion6);">Évaluer</button>
+                        <p>Et votre réponse est: <span id="reponse-question-6">cliquez sur Évaluer</span></p>
+                    </div>
+
+
+
+                    <div class="question">
+                            <h2>Défi 7</h2>
+                            <p>La fonction reponse7() prends un seul paramètre, une URL. Le document JSON qui s'y trouve à la structure suivante:
                                 <pre>
                                     {  "data": [
                                                    {"id": 1, "nom": "Jean-Marc"},
@@ -70,10 +80,10 @@
                                 </pre>                                
                             </p>
                             <p>Votre fonction doit récupérer le document JSON, compter le nombre d'éléments du tableau sous l'attribut JSON data et inscrire le résultat dans l'élément HTML dont l'ID est item-champ-text-reponse6. </p>
-                            <button type="button" onclick="evaluerQuestion('reponse-question-6', evaluerQuestion6);">Évaluer</button>
-                            <p>Et votre réponse est: <span id="reponse-question-6">cliquez sur Évaluer</span></p>
+                            <button type="button" onclick="evaluerQuestion('reponse-question-7', evaluerQuestion7);">Évaluer</button>
+                            <p>Et votre réponse est: <span id="reponse-question-7">cliquez sur Évaluer</span></p>
                             <div class="reponse-visuelle">
-                                <div id="item-champ-text-reponse6">Ici va se trouver votre réponse</div>
+                                <div id="item-champ-text-reponse7">Ici va se trouver votre réponse</div>
                             </div>                        
                     </div>
 
