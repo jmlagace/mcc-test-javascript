@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/matrix-1735640_1920.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pagewrapper {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(13, 2, 8, 0.5);
+    
+}
+
+#contentwrapper {
+    padding: 20px;
+}
+
+header#mainheader {
+    background-color: #0D0208;
+    color: #00FF41;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+}
+
+footer#mainfooter {
+    background-color: #0D0208;
+    color: #00FF41;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+
+header#mainheader h1 {
+    font-size: 3em; 
+    margin: 0;  
+    text-align: center;  
+}
+
+.reponse {
+    font-weight: bolder;
+    font-size: 1em;
+}
+.reponse.correcte {
+    color: green;
+    
+}
+.reponse.incorrect {
+    color: red;    
+}
+
+.question {
+    background-color: #f0f0f0;
+    padding: 0.25em 1em 1em 1em;
+    margin: 2em 0 2em 0;    
+    border: 1px solid grey;
+    font-size: 1em;
+}
+
+.question button {
+    font-size: 1em;
+}

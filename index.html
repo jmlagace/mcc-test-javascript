@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Un petit test en Javascript</title>
+        <script src="js/questions.js"></script>
+        <script src="js/reponses.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>       
+        <div id="pagewrapper">
+            <header id="mainheader">
+                <h1>Petits défis en Javascript</h1>
+            </header>  
+            <div id="contentwrapper">
+                <div class="question">
+                        <h2>Défi 1</h2>
+                        <p>Créer une fonction nommée reponse1(). La fonction prends deux nombres en parametres et retourne l'addition.</p>
+                        <button type="button" onclick="evaluerQuestion('reponse-question-1', evaluerQuestion1);">Évaluer</button>
+                        <p>Et votre réponse est: <span id="reponse-question-1">cliquez sur Évaluer</span></p>
+                    </div>
+            
+                    <div class="question">
+                        <h2>Défi 2</h2>
+                        <p>Créer une fonction nommée reponse2(). La fonction prends un nombre en parametre et retourne "jeune" si le nombre est plus petit ou égal à 20 et vieux si le nombre est plus grand ou egal à 20.</p>
+                        <button type="button" onclick="evaluerQuestion('reponse-question-2', evaluerQuestion2);">Évaluer</button>
+                        <p>Et votre réponse est: <span id="reponse-question-2">cliquez sur Évaluer</span></p>
+                    </div>
+            
+                    <div class="question">
+                        <h2>Défi 3</h2>
+                        <p>Créer une fonction nommée reponse3(). La fonction concatene les deux parametres avec un "-" et retourne les chaines concatenées.</p>
+                        <p>Par exemple, si la fonction reçoit "bonjour" et "maison" comme paramètre, elle va retourner "bonjour-maison".</p>
+                        <button type="button" onclick="evaluerQuestion('reponse-question-3', evaluerQuestion3);">Évaluer</button>
+                        <p>Et votre réponse est: <span id="reponse-question-3">cliquez sur Évaluer</span></p>
+                    </div>
+            
+                    <div class="question">
+                        <h2>Défi 4</h2>
+                        <p>Créer une fonction nommée reponse4(). Insérer un petit titre et un contenu dans le div dont l'ID est item-champ-text-reponse4.</p>
+                        <p>La fonction prends deux paramètres, le premier est le titre qui doit être inséré dans une balise H1, le 2e est le contenu qui doit être inséré dans une balise P.</p>
+                        <p>Par exemple, le titre "J'ai la bonne réponse" et le contenu "Effectivement." génèrera le code HTML suivant:
+                            <pre>
+                                &lt;h1&gt;J'ai la bonne réponse&lt;/h1&gt;
+                                &lt;p&gt;Effectivement.&lt;/p&gt;
+                            </pre>
+                        </p>
+                        <button type="button" onclick="evaluerQuestion('reponse-question-4', evaluerQuestion4);">Évaluer</button>
+                        <p>Et votre réponse est: <span id="reponse-question-4">cliquez sur Évaluer</span></p>
+                        <div class="reponse-visuelle">
+                            <div id="item-champ-text-reponse4">Ici va se trouver votre réponse</div>
+                        </div>                        
+                    </div>
+
+                    <div class="question">
+                            <h2>Défi 5</h2>
+                            <p>Compter le nombre de balises P dans la page du défi. Le nom de la fonction à créer est reponse5().</p>
+                            <button type="button" onclick="evaluerQuestion('reponse-question-5', evaluerQuestion5);">Évaluer</button>
+                            <p>Et votre réponse est: <span id="reponse-question-5">cliquez sur Évaluer</span></p>
+                    </div>
+
+                    <div class="question">
+                            <h2>Défi 6</h2>
+                            <p>La fonction reponse6() prends un seul paramètre, une URL. Le document JSON qui s'y trouve à la structure suivante:
+                                <pre>
+                                    {  "data": [
+                                                   {"id": 1, "nom": "Jean-Marc"},
+                                                   ...
+                                               ]
+                                    }
+                                </pre>                                
+                            </p>
+                            <p>Votre fonction doit récupérer le document JSON, compter le nombre d'éléments du tableau sous l'attribut JSON data et inscrire le résultat dans l'élément HTML dont l'ID est item-champ-text-reponse6. </p>
+                            <button type="button" onclick="evaluerQuestion('reponse-question-6', evaluerQuestion6);">Évaluer</button>
+                            <p>Et votre réponse est: <span id="reponse-question-6">cliquez sur Évaluer</span></p>
+                            <div class="reponse-visuelle">
+                                <div id="item-champ-text-reponse6">Ici va se trouver votre réponse</div>
+                            </div>                        
+                    </div>
+
+            </div>            
+            <footer id="mainfooter">                    
+                &copy; Montréal Code Camp - Deviens le héro de ta vie!
+            </footer>      
+        </div>        
+    </body>        
+</html>
